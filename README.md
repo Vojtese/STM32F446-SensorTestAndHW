@@ -1,23 +1,22 @@
-# STM32F446 Sensor Test and Hardware Interface
+# STM32F446 Sensor Test and Hardware Validation
 
-This repository contains firmware for testing sensors and hardware interfaces on the STM32F446 microcontroller. It is designed to validate analog and digital inputs, communication protocols, and signal conditioning circuits used in embedded hardware development.
+This repository contains firmware for validating analog and digital interfaces of the rainwater signal acquisition unit. It is used during development to test ADC channels, signal conditioning, and galvanic isolation.
 
 ## 🚀 Features
 
-- Sensor input testing (ADC, GPIO, UART)
-- CLI interface for debugging and validation
-- Support for galvanically isolated communication
-- STM32CubeIDE project structure
-- Integration-ready with bootloader and IAP systems
+- ADC testing for pressure, flow, and voltage sensors
+- UART CLI interface for debugging
+- RS485 and 1-Wire communication validation
+- PWM and timer-based signal generation
+- CMSIS LL drivers for direct peripheral access
 
 ## 📁 Project Structure
 
-- `Core/`: Sensor test logic and hardware interface code
+- `Core/`: Sensor test routines
 - `Drivers/`: STM32 LL drivers
-- `.ioc`: STM32CubeMX configuration file
-- `STM32F446RETX_FLASH.ld`: Linker script for standalone execution
+- `.ioc`: STM32CubeMX configuration
 
-## 🔗 Related Repositories
+## 🔗 Related Projects
 
 - [STM32F446-Bootloader](https://github.com/Vojtese/STM32F446-Bootloader)
 
