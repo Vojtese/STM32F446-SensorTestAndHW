@@ -1,6 +1,7 @@
 # STM32F446 Sensor Test and Hardware Validation
 
 This repository contains firmware for validating the analog and digital interfaces of the rainwater signal acquisition unit. It was used during development to test signal conditioning circuits, galvanic isolation, and sensor connectivity.
+It supports IAP (In Application Programming).
 
 ## 🚀 Features
 
